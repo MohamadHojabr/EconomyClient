@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">EconomyPortalClient</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="service_name">سرویس ها</string>
+    <string name="notification_name">اعلانات</string>
+    <string name="supply_name">عرضه</string>
+    <string name="demand_name">تقاضا</string>
+    <string name="specialOffer_name">پیشنهاد ویژه</string>
+    <string name="title_activity_login">ورود</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">نام کاربری</string>
+    <string name="prompt_password">رمز عبور</string>
+    <string name="action_sign_in">وارد شوید</string>
+    <string name="action_sign_in_short">ورود</string>
+    <string name="error_invalid_email">ایمیل وارد شده صحیح نیست</string>
+    <string name="error_invalid_password">طول رمز عبور کوتاه است</string>
+    <string name="error_incorrect_password">رمز عبور صحیح نیست</string>
+    <string name="error_field_required">این فیلد را لطفا پر کنید</string>
+    <string name="permission_rationale">" مجوز اطلاعات تماس برای ارائه ایمیل مورد نیاز
+         تکمیل."
+    </string>
+    <string name="title_activity_supply">Supply</string>
+</resources>
