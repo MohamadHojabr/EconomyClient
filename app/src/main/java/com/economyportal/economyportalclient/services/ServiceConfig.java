@@ -1,4 +1,4 @@
-package com.economyportal.economyportalclient.services;
+package com.economyportal.economyportalclient.Services;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;

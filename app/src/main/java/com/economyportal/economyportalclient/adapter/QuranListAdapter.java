@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.economyportal.economyportalclient.R;
-import com.economyportal.economyportalclient.model.Movie;
 import com.economyportal.economyportalclient.model.QuranList;
 
 import java.util.List;

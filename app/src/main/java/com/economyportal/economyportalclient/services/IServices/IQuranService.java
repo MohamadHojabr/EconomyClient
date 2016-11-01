@@ -1,6 +1,6 @@
-package com.economyportal.economyportalclient.services.IServices;
+package com.economyportal.economyportalclient.Services.IServices;
 import com.economyportal.economyportalclient.model.QuranList;
-import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 

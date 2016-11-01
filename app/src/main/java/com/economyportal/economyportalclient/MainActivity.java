@@ -5,6 +5,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.SearchView;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +17,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.economyportal.economyportalclient.activity.LoginActivity;
@@ -33,7 +37,7 @@ public class MainActivity extends AppCompatActivity
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
-
+private EditText searchText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +45,12 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        final Button service_button = (Button) findViewById(R.id.services_btn);
-        final Button supply_button = (Button) findViewById(R.id.supply_btn);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        //getSupportActionBar().hide();
+        final ImageButton service_button = (ImageButton) findViewById(R.id.services_btn);
+        final ImageButton supply_button = (ImageButton) findViewById(R.id.supply_btn);
+        final Button search_button = (Button) findViewById(R.id.search_btn);
+        final EditText search_text = (EditText) findViewById(R.id.search_txt);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -63,13 +70,23 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+
+
         supply_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                //Toast.makeText(MainActivity.this,"YOUR MESSAGE", Toast.LENGTH_LONG).show();
                 Intent i = new Intent(MainActivity.this, SupplyActivity.class);
                 startActivity(i);
             }
         });
+
+        search_button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, ServicesActivity.class);
+                i.putExtra("search_string", search_text.getText().toString());
+                startActivity(i);
+            }
+        });
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

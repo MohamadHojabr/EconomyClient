@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:layoutDirection="rtl"
     tools:context="com.economyportal.economyportalclient.MainActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -19,13 +20,51 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay">
-
             <android.support.v7.widget.AppCompatImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:drawable/ic_menu_save"
-                android:background="@color/colorPrimary"
+                app:srcCompat="@drawable/pishnade_vije"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                />
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/taghaza"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                />
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/supply_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/arzeh"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                />
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/bazar"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginRight="15dp"
+                android:padding="10dp"
+                />
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/services_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/khadamat"
+                android:background="@color/colorPrimaryDark"
+android:layout_marginLeft="10dp"
+android:padding="10dp"
                  />
+
+
+
 
         </android.support.v7.widget.Toolbar>
 

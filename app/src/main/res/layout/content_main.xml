@@ -31,73 +31,53 @@
 
             android:layout_weight="0.47" />
 
-<android.support.v7.widget.SearchView
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent"
-    android:layout_gravity="center"
-    android:layoutDirection="rtl"
-    android:background="@color/colorSuccess"
-    />
-
-        <Button
-            android:text="@string/service_name"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/services_btn"
-            android:drawableRight="@drawable/services"
+            android:text="@string/app_name"
+            android:textSize="34dp"
+            android:textAlignment="center"
+            android:padding="20dp"
+            android:layout_margin="25dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_32"
+                android:background="@color/lightGray"
+                android:layout_weight="0.2"
+                android:padding="10dp"
+                />
+            <EditText
+                android:id="@+id/search_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightGray"
+            android:layout_weight="0.8"
+                android:textAlignment="center"
             />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <Button
-                android:text="@string/demand_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/demand_btn"
-                android:layout_weight="1"
-                android:drawableRight="@drawable/demand"
-                />
-
-            <Button
-                android:text="@string/supply_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/supply_btn"
-                android:layout_weight="1"
-                android:drawableRight="@drawable/give"
-                />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.1">
-
-            <Button
-                android:text="@string/specialOffer_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/special_offer_btn"
-                android:layout_weight="0.63"
-                android:drawableRight="@drawable/special_offer"
-                />
-
-            <Button
-                android:text="@string/notification_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/notification_btn"
-                android:layout_weight="1"
-                android:drawableRight="@drawable/significon"
-                />
-
-        </LinearLayout>
-
+            android:textAlignment="center"
+            android:text="جستجو کنید"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            />
 
     </LinearLayout>
 

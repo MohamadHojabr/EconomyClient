@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import com.economyportal.economyportalclient.R;
-import com.economyportal.economyportalclient.model.Movie;
 import com.economyportal.economyportalclient.model.Tag;
 
 import java.util.List;
@@ -15,9 +14,9 @@ import java.util.List;
  * Created by mohamad on 10/30/2016.
  */
 
-public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHolder> {
+public class TagAdapter extends RecyclerView.Adapter<TagAdapter.MyViewHolder> {
 
-    private List<Tag> moviesList;
+    private List<Tag> data;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView title, year, genre;
@@ -31,8 +30,8 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHold
     }
 
 
-    public MoviesAdapter(List<Tag> moviesList) {
-        this.moviesList = moviesList;
+    public TagAdapter(List<Tag> moviesList) {
+        this.data = moviesList;
     }
 
     @Override
@@ -45,7 +44,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHold
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        Tag movie = moviesList.get(position);
+        Tag movie = data.get(position);
         holder.title.setText(movie.getName());
         holder.genre.setText(movie.getId().toString());
         holder.year.setText("2015");
@@ -53,6 +52,6 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHold
 
     @Override
     public int getItemCount() {
-        return moviesList.size();
+        return 1;
     }
 }
