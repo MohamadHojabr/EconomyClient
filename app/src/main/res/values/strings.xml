@@ -26,4 +26,22 @@
          تکمیل."
     </string>
     <string name="title_activity_supply">Supply</string>
+    <string name="title_activity_service_list">ServiceListActivity</string>
+
+    <string name="title_request_brokerage">درخواست های کارگزاری</string>
+    <string name="title_career_opportunities">فرصت های شغلی</string>
+    <string name="title_special_offer">پیشنهاد ویژه</string>
+    <string name="title_service_providers">ارائه کنندگان خدمات</string>
+    <string name="title_consultation">مشاوره</string>
+    <string name="title_jobseekers">کارجویان</string>
+    <string name="title_investment_plans">طرح های سرمایه گذاری</string>
+    <string name="title_top_manufacturers">تولید کنندگان برتر</string>
+    <string name="title_reports">گزارشات</string>
+    <string name="title_databases">بانک های اطلاعاتی</string>
+    <string name="title_events">رویدادها</string>
+    <string name="title_entrepreneurs">فعالان تجاری</string>
+    <string name="title_news">اخبار</string>
+    <string name="title_links">پیوند ها</string>
+    <string name="title_tender">مناقصه و مزایده</string>
+    <string name="title_solutions_and_software">راهکارها و نرم افزار ها</string>
 </resources>
