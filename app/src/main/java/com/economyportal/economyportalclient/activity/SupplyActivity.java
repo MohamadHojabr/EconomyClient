@@ -11,9 +11,9 @@ import android.view.View;
 import com.economyportal.economyportalclient.R;
 import com.economyportal.economyportalclient.model.QuranList;
 
-import com.economyportal.economyportalclient.Services.IServices.IQuranService;
 
-import com.economyportal.economyportalclient.Services.ServiceConfig;
+import com.economyportal.economyportalclient.services.IServices.IQuranService;
+import com.economyportal.economyportalclient.services.ServiceConfig;
 
 
 

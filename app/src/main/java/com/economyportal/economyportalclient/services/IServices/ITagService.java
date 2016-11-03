@@ -1,4 +1,4 @@
-package com.economyportal.economyportalclient.Services.IServices;
+package com.economyportal.economyportalclient.services.IServices;
 
 import com.economyportal.economyportalclient.model.Tag;
 

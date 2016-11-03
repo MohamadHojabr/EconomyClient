@@ -26,8 +26,7 @@
          تکمیل."
     </string>
     <string name="title_activity_supply">Supply</string>
-    <string name="title_activity_service_list">ServiceListActivity</string>
-
+    <string name="title_activity_service_list">خدمات</string>
     <string name="title_request_brokerage">درخواست های کارگزاری</string>
     <string name="title_career_opportunities">فرصت های شغلی</string>
     <string name="title_special_offer">پیشنهاد ویژه</string>

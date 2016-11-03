@@ -15,8 +15,8 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 import com.economyportal.economyportalclient.R;
-import com.economyportal.economyportalclient.Services.IServices.ITagService;
-import com.economyportal.economyportalclient.Services.ServiceConfig;
+import com.economyportal.economyportalclient.services.IServices.ITagService;
+import com.economyportal.economyportalclient.services.ServiceConfig;
 import com.economyportal.economyportalclient.adapter.TagAdapter;
 import com.economyportal.economyportalclient.model.Tag;
 import com.economyportal.economyportalclient.utility.ClickListener;
